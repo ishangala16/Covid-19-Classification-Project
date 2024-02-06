@@ -1,6 +1,9 @@
 # Covid-19-Classification-Project
 A binary covid classification project for X-ray images.
 
+![Alt text](screenshot.webp)
+
+
 ## Setup
 ### 1. Clone the repository first using this command
 ```

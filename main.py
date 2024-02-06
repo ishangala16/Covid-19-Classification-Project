@@ -7,7 +7,7 @@ import cv2
 from tensorflow import keras
 
 def prediction(img):
-    model = keras.models.load_model('cnn_model.h5')
+    model = keras.models.load_model('models/cnn_model.h5')
     predicition = model.predict(img)
     predicition = np.argmax(predicition, axis = 1) 
     if predicition == 1:
@@ -43,6 +43,7 @@ def main():
     st.title('Covid-19 Classifier')
     st.sidebar.title("Upload an Image")
     load_image()
+
 
 
 if __name__ == '__main__':
